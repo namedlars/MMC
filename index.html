@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0A0A0B" />
+  <title>Momentum Combat Club · Kampfsport &amp; Grappling in Donauwörth</title>
+  <meta name="description" content="Brazilian Jiu-Jitsu, Kickboxen und MMA in Donauwörth. Headcoach Jonas Ried, ADCC German Open Champion 2023. Jetzt kostenloses Probetraining vereinbaren." />
+
+  <meta property="og:title" content="Momentum Combat Club · Kampfsport &amp; Grappling in Donauwörth" />
+  <meta property="og:description" content="Finde dein Momentum. BJJ, No-Gi Grappling und MMA in Donauwörth." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: distinctive, athletic, editorial. Only weights actually in use. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;600;700&family=Fraunces:ital,wght@1,500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <div class="announce" role="region" aria-label="Hinweis">
+    <div class="announce__inner">
+      <span class="announce__pill">NEU</span>
+      <span>Anfänger-Kurs ab Mai · Plätze begrenzt</span>
+      <a href="#kontakt" class="announce__link">Platz sichern <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav__container">
+      <a href="#top" class="logo" aria-label="Momentum Combat Club Startseite">
+        <span class="logo__mark">
+          <img src="assets/logo.webp" alt="Momentum Combat Club" class="logo__img" width="56" height="56" />
+          <svg class="logo__svg" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M4 32 L20 6 L36 32 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M14 26 L20 16 L26 26" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation" id="primaryNav">
+        <ul class="nav__list">
+          <li><a href="#training"><span class="nav__num">01</span>Training</a></li>
+          <li><a href="#coach"><span class="nav__num">02</span>Coach</a></li>
+          <li><a href="#tutorials"><span class="nav__num">03</span>Tutorials</a></li>
+          <li><a href="#erfolge"><span class="nav__num">04</span>Erfolge</a></li>
+          <li><a href="#community"><span class="nav__num">05</span>Community</a></li>
+          <li><a href="#stundenplan"><span class="nav__num">06</span>Plan</a></li>
+          <li><a href="#faq"><span class="nav__num">07</span>FAQ</a></li>
+        </ul>
+        <a href="#kontakt" class="btn btn--accent btn--sm nav__cta">Probetraining</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Menü öffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Willkommen">
+      <!-- Hero-Hintergrund.
+           Nutzt cta-bg.* als gemeinsamen Asset (Hero + Final CTA teilen sich denselben File).
+           Lädt zuerst lokale WebM/MP4, sonst Pexels-CDN-Fallback.
+           Poster: cta-bg.webp wenn lokal vorhanden, sonst Unsplash. -->
+      <div class="hero__video" aria-hidden="true">
+        <video
+          id="heroVideo"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://images.unsplash.com/photo-1672791841213-418db8ef42cf?auto=format&fit=crop&w=1400&q=70"
+          data-poster-local="assets/cta-bg.webp">
+          <source src="assets/cta-bg.webm" type="video/webm" />
+          <source src="assets/cta-bg.mp4"  type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/6296447/6296447-hd_1920_1080_25fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/4761711/4761711-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__video-overlay"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <!-- Floating side label -->
+      <div class="hero__sidelabel" aria-hidden="true">
+        <span>EST. 2023</span>
+        <span class="hero__sidelabel-line"></span>
+        <span>DONAUWÖRTH · DE</span>
+      </div>
+
+      <!-- Index counter -->
+      <div class="hero__index" aria-hidden="true">
+        <span class="hero__index-num">N° 01</span>
+        <span class="hero__index-label">Willkommen</span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="dot"></span>
+            <span>LIVE TRAINING</span>
+            <span class="hero__eyebrow-sep"></span>
+            <span>DONAUWÖRTH</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__title-line"><span class="hero__title-inner">Finde</span></span>
+            <span class="hero__title-line"><span class="hero__title-inner">dein</span></span>
+            <span class="hero__title-line hero__title-line--accent"><span class="hero__title-inner">Momentum<span class="hero__dot">.</span></span></span>
+          </h1>
+
+          <p class="hero__sub">
+            Brazilian Jiu-Jitsu <span class="hero__sub-sep">·</span> Kickboxen <span class="hero__sub-sep">·</span> MMA
+          </p>
+
+          <p class="hero__lead">
+            Effektives Training auf der Matte. Vom ersten Probetraining bis zum Wettkampf.
+            Geführt von ADCC German Open Champion <strong>Jonas Ried</strong>.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#kontakt" class="btn btn--accent btn--lg">
+              <span>Kostenloses Probetraining</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#stundenplan" class="btn btn--ghost btn--lg">
+              <span class="btn__circle"></span>
+              <span>Stundenplan</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom ticker -->
+      <div class="hero__ticker" aria-hidden="true">
+        <div class="hero__ticker-inner">
+          <span class="hero__ticker-live"><span class="hero__ticker-dot"></span>LIVE</span>
+          <span class="hero__ticker-track">
+            <span>ADCC GERMAN OPEN '23 · GOLD</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>SHOOTO GERMANY · UNDERDOGS MMA</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>30+ ATHLETEN AUF DER MATTE</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>KOSTENLOSES PROBETRAINING JEDEN MONTAG</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>ADCC GERMAN OPEN '23 · GOLD</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>SHOOTO GERMANY · UNDERDOGS MMA</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>30+ ATHLETEN AUF DER MATTE</span>
+            <span class="hero__ticker-bullet">◆</span>
+            <span>KOSTENLOSES PROBETRAINING JEDEN MONTAG</span>
+            <span class="hero__ticker-bullet">◆</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS STRIP ============ -->
+    <section class="stats-strip" aria-label="Zahlen">
+      <div class="container stats-strip__inner">
+        <div class="stat" data-counter="30" data-suffix="+">
+          <span class="stat__num"><span class="stat__value">0</span><span class="stat__suffix">+</span></span>
+          <span class="stat__label">Aktive Mitglieder</span>
+        </div>
+        <div class="stat" data-counter="2">
+          <span class="stat__num"><span class="stat__value">0</span></span>
+          <span class="stat__label">Trainings pro Woche</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num stat__num--text">#1</span>
+          <span class="stat__label">ADCC German Open '23</span>
+        </div>
+        <div class="stat" data-counter="3">
+          <span class="stat__num"><span class="stat__value">0</span></span>
+          <span class="stat__label">Disziplinen unter einem Dach</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" aria-label="Unser Versprechen">
+      <div class="container manifesto__inner">
+        <div class="manifesto__chapter">
+          <span class="manifesto__num">02</span>
+          <span class="manifesto__line"></span>
+          <span class="manifesto__label">MANIFEST</span>
+        </div>
+
+        <h2 class="manifesto__quote">
+          <span class="manifesto__mark" aria-hidden="true">"</span>
+          Wir trainieren nicht, um zu kämpfen.<br/>
+          Wir trainieren, um <em>jeden Tag</em> ein<br/>
+          Stück <span class="accent-text">besser</span> zu werden als gestern.
+        </h2>
+
+        <div class="manifesto__sig">
+          <span class="manifesto__sig-line"></span>
+          <span>Jonas Ried · Headcoach</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAINING / SERVICES ============ -->
+    <section id="training" class="section section--training">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">03</span>
+            <span class="section__line"></span>
+            <span class="section__label">TRAINING</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">
+              Drei Disziplinen.<br/>
+              <span class="accent-text">Ein Ziel.</span>
+            </h2>
+            <p class="section__lead">Strukturierte Trainingsblöcke für Anfänger und Fortgeschrittene. Wir trainieren hart, aber vor allem intelligent. Jede Session hat einen technischen Fokus, ein Drilling-Element und kontrolliertes Sparring.</p>
+          </div>
+        </header>
+
+        <div class="cards">
+          <!-- Card 01: BJJ Gi -->
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/card-bjj.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?auto=format&fit=crop&w=900&q=75';"
+                   alt="Brazilian Jiu-Jitsu im Gi"
+                   width="900" height="675" loading="lazy" />
+              <span class="card__num">01</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Brazilian<br/>Jiu-Jitsu <span class="card__chip">GI</span></h3>
+              <p class="card__text">Das klassische BJJ im Kimono. Hebel, Würger, Positionsspiel und Ground Game. Sauberes Technik-Drilling und Live-Sparring, für jedes Level.</p>
+              <ul class="card__list">
+                <li>Fundamentals &amp; Advanced</li>
+                <li>Open Mat am Samstag</li>
+                <li>Belt-Curriculum nach IBJJF</li>
+              </ul>
+              <a href="#stundenplan" class="card__link">
+                <span>Trainingszeiten</span>
+                <span class="card__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 02: No-Gi / Luta Livre -->
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/card-kickboxing.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=900&q=75';"
+                   alt="Kickboxen Training"
+                   width="900" height="675" loading="lazy" />
+              <span class="card__num">02</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Kickboxen <span class="card__chip">STAND-UP</span></h3>
+              <p class="card__text">Sauberes Striking aus dem Kickboxen. Punches, Kicks, Knee &amp; Clinch. Footwork, Padarbeit und kontrolliertes Sparring für Anfänger bis Wettkämpfer.</p>
+              <ul class="card__list">
+                <li>Stance &amp; Footwork</li>
+                <li>Padwork &amp; Combinations</li>
+                <li>Kontrolliertes Sparring</li>
+              </ul>
+              <a href="#stundenplan" class="card__link">
+                <span>Trainingszeiten</span>
+                <span class="card__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 03: MMA -->
+          <article class="card">
+            <div class="card__media">
+              <img src="assets/card-mma.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1672791841213-418db8ef42cf?auto=format&fit=crop&w=900&q=75';"
+                   alt="MMA Training und Fitness"
+                   width="900" height="675" loading="lazy" />
+              <span class="card__num">03</span>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">MMA Basics <span class="card__chip">+ FITNESS</span></h3>
+              <p class="card__text">Striking, Clinch und Übergänge ins Bodenspiel. Konditions- und Krafttraining ergänzen die Technik. Für Hobby-Sportler bis angehende Wettkämpfer.</p>
+              <ul class="card__list">
+                <li>Striking &amp; Clinch</li>
+                <li>Wrestling for MMA</li>
+                <li>Functional Fitness</li>
+              </ul>
+              <a href="#stundenplan" class="card__link">
+                <span>Trainingszeiten</span>
+                <span class="card__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ÜBER UNS / HEADCOACH ============ -->
+    <section id="coach" class="section section--coach">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">04</span>
+            <span class="section__line"></span>
+            <span class="section__label">HEADCOACH</span>
+          </div>
+        </header>
+
+        <div class="coach">
+          <div class="coach__visual">
+            <div class="coach__photo">
+              <img src="assets/jonas-ried.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1681203888755-bd61fe3558eb?auto=format&fit=crop&w=1000&q=80';"
+                   alt="Jonas Ried, Headcoach des Momentum Combat Club"
+                   width="1000" height="1250" loading="lazy" />
+              <span class="coach__photo-frame" aria-hidden="true"></span>
+              <span class="coach__photo-label" aria-hidden="true">JR · 2024</span>
+            </div>
+
+            <div class="coach__plate">
+              <span class="badge badge--gold">ADCC GERMAN OPEN '23 · GOLD</span>
+              <span class="coach__plate-line"></span>
+              <p class="coach__plate-name">Jonas Ried</p>
+              <p class="coach__plate-role">Headcoach &amp; Gründer</p>
+            </div>
+
+            <ul class="coach__signals" aria-label="Wettkampf-Stationen">
+              <li>SHOOTO GERMANY</li>
+              <li>UNDERDOGS MMA</li>
+              <li>ADCC TRIALS</li>
+            </ul>
+          </div>
+
+          <div class="coach__body">
+            <h2 class="section__title section__title--coach">
+              <span class="accent-text">Erfahrung</span><br/>aus dem Käfig.<br/>
+              <span class="coach__title-italic">Leidenschaft auf der Matte.</span>
+            </h2>
+
+            <p class="coach__intro">
+              <span class="dropcap">K</span>ampfsport ist für mich mehr als nur Technik. Es ist die stetige Suche nach dem perfekten <em>„Momentum"</em>.
+              Als Gründer und Headcoach des Momentum Combat Clubs ist es mein Ziel, die Effektivität des modernen
+              Grapplings und MMA für jeden zugänglich zu machen, egal ob Hobby-Sportler oder angehender Wettkämpfer.
+            </p>
+
+            <p class="coach__intro">
+              Meine eigene Reise ist geprägt von nationalen und internationalen Wettkämpfen, in denen ich meine Techniken
+              unter höchstem Druck testen konnte. Diese Erfahrung fließt in jede Trainingseinheit ein:
+              <strong>Wir trainieren nicht nur hart, sondern vor allem intelligent.</strong>
+            </p>
+
+            <h3 class="coach__sub">
+              <span class="coach__sub-num">01 / 04</span>
+              Sportliche Meilensteine
+            </h3>
+            <ul class="achievements">
+              <li>
+                <span class="achievements__index">01</span>
+                <div class="achievements__body">
+                  <span class="achievements__tag">2023 · GOLD</span>
+                  <strong>ADCC German Open Champion</strong>
+                  <span class="achievements__detail">1. Platz (Gold) in einer der härtesten Grappling-Organisationen weltweit.</span>
+                </div>
+              </li>
+              <li>
+                <span class="achievements__index">02</span>
+                <div class="achievements__body">
+                  <span class="achievements__tag">PRO MMA</span>
+                  <strong>Aktiver MMA-Wettkämpfer</strong>
+                  <span class="achievements__detail">Erfahrung im professionellen Käfig: u.&nbsp;a. Shooto Germany &amp; Underdogs MMA.</span>
+                </div>
+              </li>
+              <li>
+                <span class="achievements__index">03</span>
+                <div class="achievements__body">
+                  <span class="achievements__tag">SPEZIALIST</span>
+                  <strong>Grappling-Spezialist</strong>
+                  <span class="achievements__detail">Fokus auf Luta Livre und No-Gi BJJ mit Expertise in Top-Pressure und Submissions.</span>
+                </div>
+              </li>
+              <li>
+                <span class="achievements__index">04</span>
+                <div class="achievements__body">
+                  <span class="achievements__tag">RANKING</span>
+                  <strong>Deutsches Leichtgewichts-Ranking (MMA)</strong>
+                  <span class="achievements__detail">Gelistet im offiziellen deutschen MMA-Ranking.</span>
+                </div>
+              </li>
+            </ul>
+
+            <blockquote class="coach__quote">
+              <svg class="coach__quote-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8c-4 0-7 3-7 7v9h9v-9H7c0-3 1.5-5 3-5V8zm15 0c-4 0-7 3-7 7v9h9v-9h-5c0-3 1.5-5 3-5V8z" fill="currentColor"/></svg>
+              <p>
+                Jeder hat mal angefangen. Mein Job ist es nicht nur, dir Techniken beizubringen,
+                sondern dir dabei zu helfen, über dich selbst hinauszuwachsen. Im Momentum Combat Club trainieren wir als Team:
+                <strong>respektvoll, fokussiert und mit dem Ziel, jeden Tag ein Stück besser zu werden als gestern.</strong>
+              </p>
+              <footer>Jonas Ried, Headcoach</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TUTORIALS ============ -->
+    <section id="tutorials" class="section section--tutorials">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">05</span>
+            <span class="section__line"></span>
+            <span class="section__label">TUTORIALS</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">
+              Lerne von <span class="accent-text">Jonas</span>.<br/>
+              Direkt von der Matte.
+            </h2>
+            <p class="section__lead">Die vier neuesten Technik-Tutorials von Jonas, frisch aus dem Instagram-Feed. Setups, Submissions und Defense-Konzepte zum Mitnehmen auf die Matte.</p>
+          </div>
+        </header>
+
+        <div class="tutorials">
+          <a href="https://www.instagram.com/p/DP9ObS-DA0l/" target="_blank" rel="noopener noreferrer" class="tutorial tutorial--lg">
+            <div class="tutorial__media">
+              <img src="assets/tutorial-01.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1564415299969-9fa66e8e5dde?auto=format&fit=crop&w=1000&q=75';"
+                   alt="Tutorial: Back Mount Szenarios pt. 2" width="1000" height="625" loading="lazy" />
+              <span class="tutorial__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              </span>
+              <span class="tutorial__chip">NEU</span>
+            </div>
+            <div class="tutorial__body">
+              <span class="tutorial__cat">GRAPPLING · BACK CONTROL</span>
+              <h3 class="tutorial__title">Back Mount Szenarios pt.&nbsp;2</h3>
+              <p class="tutorial__text">Wie du aus der Back Control sauber finishst, wenn dein Gegner Hand-Fighting macht und sich runterdreht.</p>
+              <span class="tutorial__cta">Auf Instagram ansehen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/p/DPMJScSDEJZ/" target="_blank" rel="noopener noreferrer" class="tutorial">
+            <div class="tutorial__media">
+              <img src="assets/tutorial-02.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1682545888368-587f56efd06e?auto=format&fit=crop&w=600&q=75';"
+                   alt="Tutorial Episode 02: Side Mount attacks pt1" width="600" height="375" loading="lazy" />
+              <span class="tutorial__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              </span>
+            </div>
+            <div class="tutorial__body">
+              <span class="tutorial__cat">TOP GAME · SIDE MOUNT</span>
+              <h3 class="tutorial__title">Side Mount Attacks pt.&nbsp;1</h3>
+              <p class="tutorial__text">Die ersten drei sauberen Submission-Setups direkt aus der Side Mount, mit Druckaufbau und Crossface.</p>
+              <span class="tutorial__cta">Auf Instagram ansehen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/p/DPHZyBBjXuy/" target="_blank" rel="noopener noreferrer" class="tutorial">
+            <div class="tutorial__media">
+              <img src="assets/tutorial-03.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1639177210999-92b0ffcbdbf6?auto=format&fit=crop&w=600&q=75';"
+                   alt="Tutorial Episode 03: Rear body lock counter pt1" width="600" height="375" loading="lazy" />
+              <span class="tutorial__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              </span>
+            </div>
+            <div class="tutorial__body">
+              <span class="tutorial__cat">DEFENSE · BODY LOCK</span>
+              <h3 class="tutorial__title">Rear Body Lock Counter pt.&nbsp;1</h3>
+              <p class="tutorial__text">Wie du den Rear Body Lock kontrolliert auflöst, bevor dein Gegner dich nach hinten ziehen kann.</p>
+              <span class="tutorial__cta">Auf Instagram ansehen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/p/DN_LFX3jOfI/" target="_blank" rel="noopener noreferrer" class="tutorial">
+            <div class="tutorial__media">
+              <img src="assets/tutorial-04.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1563844528129-067e06a638e5?auto=format&fit=crop&w=600&q=75';"
+                   alt="Tutorial Episode 04: Butterfly sweep pt1" width="600" height="375" loading="lazy" />
+              <span class="tutorial__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              </span>
+            </div>
+            <div class="tutorial__body">
+              <span class="tutorial__cat">GUARD · SWEEPS</span>
+              <h3 class="tutorial__title">Butterfly Sweep pt.&nbsp;1</h3>
+              <p class="tutorial__text">Der Butterfly Sweep sauber durchgezogen: Hook-Setup, Underhook und der saubere Übergang in die Top-Position.</p>
+              <span class="tutorial__cta">Auf Instagram ansehen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+
+        <a href="https://www.instagram.com/momentumcombatclub/" target="_blank" rel="noopener noreferrer" class="tutorials__more">
+          <span>Alle Tutorials auf Instagram</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MITGLIEDERERFOLGE ============ -->
+    <section id="erfolge" class="section section--success">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">06</span>
+            <span class="section__line"></span>
+            <span class="section__label">MITGLIEDERERFOLGE</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">
+              Was unsere Athleten<br/>
+              auf der <span class="accent-text">Matte</span> erreichen.
+            </h2>
+            <p class="section__lead">Vom ersten Probetraining zum Wettkampf-Podium. Eine Auswahl der jüngsten Erfolge unserer Mitglieder bei nationalen und regionalen Turnieren.</p>
+          </div>
+        </header>
+
+        <div class="success-grid">
+          <article class="success success--featured">
+            <div class="success__media">
+              <img src="assets/success-talha.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1672774491281-28e5a4db0508?auto=format&fit=crop&w=1000&q=75';"
+                   alt="Talha K., ADCC Open Bayern Champion" width="1000" height="1250" loading="lazy" />
+              <span class="success__medal" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z" fill="currentColor"/></svg>
+              </span>
+              <span class="success__rank">1.&nbsp;PLATZ</span>
+            </div>
+            <div class="success__body">
+              <span class="success__tag">ADCC OPEN BAYERN · 2025</span>
+              <h3 class="success__name">Talha K.</h3>
+              <p class="success__detail">Gold im No-Gi Leichtgewicht nach nur 14 Monaten Training. Vier Submissions in vier Kämpfen.</p>
+              <ul class="success__stats">
+                <li><span>14</span>Monate</li>
+                <li><span>4/4</span>Subs</li>
+                <li><span>-77kg</span>Klasse</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="success">
+            <div class="success__media">
+              <img src="assets/success-batu.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1688141401462-d2ef7c292b0e?auto=format&fit=crop&w=600&q=75';"
+                   alt="Batu G., BJJ Augsburg Open" width="600" height="750" loading="lazy" />
+              <span class="success__medal" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z" fill="currentColor"/></svg>
+              </span>
+              <span class="success__rank">2.&nbsp;PLATZ</span>
+            </div>
+            <div class="success__body">
+              <span class="success__tag">BJJ AUGSBURG OPEN</span>
+              <h3 class="success__name">Batu G.</h3>
+              <p class="success__detail">Silber im Gi-Mittelgewicht. Erst sechs Monate dabei, bereits drei Podiumsplätze.</p>
+            </div>
+          </article>
+
+          <article class="success">
+            <div class="success__media">
+              <img src="assets/success-tim.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1680022548963-1d8e630a272b?auto=format&fit=crop&w=600&q=75';"
+                   alt="Tim F., Shooto München TKO" width="600" height="750" loading="lazy" />
+              <span class="success__medal" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z" fill="currentColor"/></svg>
+              </span>
+              <span class="success__rank">1.&nbsp;PLATZ</span>
+            </div>
+            <div class="success__body">
+              <span class="success__tag">SHOOTO REGIONAL · MÜNCHEN</span>
+              <h3 class="success__name">Tim F.</h3>
+              <p class="success__detail">MMA-Debut gewonnen per TKO in Runde 2. Erstes Amateur-Match nach acht Monaten Vorbereitung.</p>
+            </div>
+          </article>
+
+          <article class="success success--wide">
+            <div class="success__body success__body--quote">
+              <span class="success__quote-mark" aria-hidden="true">"</span>
+              <p class="success__quote">Vom ersten Probetraining bis zum ersten Goldmedaillen-Match. Bei uns bekommst du den kompletten Pfad. <strong>Wettkampf-Coaching ist im Unlimited-Tarif drin</strong>, Wettkampftage werden vom Coach begleitet.</p>
+              <footer>Jonas Ried</footer>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOCIAL PROOF ============ -->
+    <section id="community" class="section section--social">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">07</span>
+            <span class="section__line"></span>
+            <span class="section__label">COMMUNITY</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">Was unsere<br/><span class="accent-text">Athleten</span> sagen.</h2>
+            <p class="section__lead">Echte Stimmen aus dem Gym. Keine Skripte, keine Ghostwriter, nur Trainingspartner, die ihre Reise teilen.</p>
+          </div>
+        </header>
+
+        <div class="reviews">
+          <div class="reviews__summary">
+            <div class="reviews__rating">
+              <span class="reviews__score">4,9</span>
+              <div class="reviews__stars" aria-label="4,9 von 5 Sternen">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z" fill="currentColor"/></svg>
+              </div>
+              <span class="reviews__count">basiert auf 64 Google-Rezensionen</span>
+            </div>
+            <a href="#" class="btn btn--ghost btn--sm">Auf Google ansehen</a>
+          </div>
+
+          <ul class="review-list" role="list">
+            <li class="review">
+              <span class="review__num">01</span>
+              <div class="review__stars">★★★★★</div>
+              <p class="review__text">„Endlich ein Gym mit echtem Wettkampf-Niveau in Donauwörth. Jonas erklärt Technik so klar, dass auch Einsteiger sofort dranbleiben. Top Atmosphäre, kein Ego."</p>
+              <footer class="review__meta">
+                <span class="review__avatar" aria-hidden="true">T</span>
+                <div>
+                  <strong>Talha K.</strong>
+                  <span>vor 2 Wochen</span>
+                </div>
+              </footer>
+            </li>
+            <li class="review">
+              <span class="review__num">02</span>
+              <div class="review__stars">★★★★★</div>
+              <p class="review__text">„Bin als kompletter Neuling gestartet. Nach 3 Monaten fühle ich mich fitter, fokussierter und selbstbewusster. Die Community ist Gold wert."</p>
+              <footer class="review__meta">
+                <span class="review__avatar" aria-hidden="true">B</span>
+                <div>
+                  <strong>Batu G.</strong>
+                  <span>vor 1 Monat</span>
+                </div>
+              </footer>
+            </li>
+            <li class="review">
+              <span class="review__num">03</span>
+              <div class="review__stars">★★★★★</div>
+              <p class="review__text">„Saubere Halle, ehrliche Coaches, hartes aber faires Training. Genau das, was ich gesucht habe. Wer wirklich Grappling lernen will, ist hier richtig."</p>
+              <footer class="review__meta">
+                <span class="review__avatar" aria-hidden="true">T</span>
+                <div>
+                  <strong>Tim F.</strong>
+                  <span>vor 3 Wochen</span>
+                </div>
+              </footer>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Instagram -->
+        <div class="instagram">
+          <header class="instagram__head">
+            <div>
+              <span class="eyebrow"><span class="eyebrow__line"></span>INSTAGRAM</span>
+              <h3 class="instagram__title">Folge uns: <span class="accent-text">@momentumcombatclub</span></h3>
+            </div>
+            <a href="https://instagram.com/momentumcombatclub" class="btn btn--ghost btn--sm" target="_blank" rel="noopener noreferrer">
+              <span>Profil öffnen</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </header>
+
+          <div class="ig-grid">
+            <a href="https://instagram.com/momentumcombatclub" class="ig-tile ig-tile--lg" aria-label="Instagram-Post">
+              <img src="assets/ig-01.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1672791841213-418db8ef42cf?auto=format&fit=crop&w=800&q=75';"
+                   alt="" width="800" height="800" loading="lazy" />
+              <span class="ig-tile__overlay">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/></svg>
+                <span>39</span>
+              </span>
+            </a>
+            <a href="https://instagram.com/momentumcombatclub" class="ig-tile" aria-label="Instagram-Post">
+              <img src="assets/ig-02.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?auto=format&fit=crop&w=400&q=75';"
+                   alt="" width="400" height="400" loading="lazy" />
+              <span class="ig-tile__overlay">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/></svg>
+                <span>49</span>
+              </span>
+            </a>
+            <a href="https://instagram.com/momentumcombatclub" class="ig-tile" aria-label="Instagram-Post">
+              <img src="assets/ig-03.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604499077368-9e99fb04754c?auto=format&fit=crop&w=400&q=75';"
+                   alt="" width="400" height="400" loading="lazy" />
+              <span class="ig-tile__overlay">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/></svg>
+                <span>37</span>
+              </span>
+            </a>
+            <a href="https://instagram.com/momentumcombatclub" class="ig-tile" aria-label="Instagram-Post">
+              <img src="assets/ig-04.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1680022550327-84d2a39c9328?auto=format&fit=crop&w=400&q=75';"
+                   alt="" width="400" height="400" loading="lazy" />
+              <span class="ig-tile__overlay">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/></svg>
+                <span>34</span>
+              </span>
+            </a>
+            <a href="https://instagram.com/momentumcombatclub" class="ig-tile" aria-label="Instagram-Post">
+              <img src="assets/ig-05.webp"
+                   onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1639177210999-92b0ffcbdbf6?auto=format&fit=crop&w=400&q=75';"
+                   alt="" width="400" height="400" loading="lazy" />
+              <span class="ig-tile__overlay">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="currentColor"/></svg>
+                <span>27</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STUNDENPLAN & PREISE ============ -->
+    <section id="stundenplan" class="section section--schedule">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">08</span>
+            <span class="section__line"></span>
+            <span class="section__label">STUNDENPLAN</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">Wann du <span class="accent-text">trainieren</span> kannst.</h2>
+            <p class="section__lead">Live aus unserer Trainings-Software. Buche dein Probetraining direkt im Stundenplan, keine Anmeldung nötig.</p>
+          </div>
+        </header>
+
+        <!-- Gymdesk widget placeholder + visual -->
+        <div class="gymdesk">
+          <div class="gymdesk__inner">
+            <div class="gymdesk__loader" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="gymdesk__title">Stundenplan-Widget</p>
+            <p class="gymdesk__sub">Hier wird der Live-Kalender aus <strong>Gymdesk</strong> eingebettet.</p>
+            <code class="gymdesk__code">&lt;iframe src="https://app.gymdesk.com/embed/momentum-combat-club" /&gt;</code>
+          </div>
+
+          <div class="schedule-preview" aria-label="Beispiel-Wochenplan">
+            <div class="schedule-preview__row schedule-preview__row--head">
+              <span></span>
+              <span>MO</span><span>DI</span><span>MI</span><span>DO</span><span>FR</span><span>SA</span>
+            </div>
+            <div class="schedule-preview__row">
+              <span class="schedule-preview__time">17:30</span>
+              <span class="slot slot--bjj">BJJ Kids</span>
+              <span></span>
+              <span class="slot slot--bjj">BJJ Kids</span>
+              <span></span>
+              <span class="slot slot--bjj">BJJ Kids</span>
+              <span></span>
+            </div>
+            <div class="schedule-preview__row">
+              <span class="schedule-preview__time">19:00</span>
+              <span class="slot slot--bjj">BJJ Gi</span>
+              <span class="slot slot--mma">MMA</span>
+              <span class="slot slot--kb">Kickboxen</span>
+              <span class="slot slot--bjj">BJJ Gi</span>
+              <span class="slot slot--mma">MMA</span>
+              <span class="slot slot--open">Open Mat</span>
+            </div>
+            <div class="schedule-preview__row">
+              <span class="schedule-preview__time">20:30</span>
+              <span class="slot slot--kb">Kickboxen</span>
+              <span class="slot slot--fitness">Fitness</span>
+              <span class="slot slot--mma">MMA</span>
+              <span class="slot slot--kb">Kickboxen</span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="pricing" aria-label="Mitgliedschaften">
+          <article class="price">
+            <header class="price__head">
+              <span class="price__index">01</span>
+              <h3 class="price__name">Drop-In</h3>
+              <p class="price__sub">Probier's aus.</p>
+            </header>
+            <p class="price__amount"><span class="price__currency">€</span>20<span class="price__per">/ Einheit</span></p>
+            <ul class="price__features">
+              <li>1 Trainingseinheit</li>
+              <li>Alle Kurse wählbar</li>
+              <li>Keine Bindung</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--ghost btn--block">Buchen</a>
+          </article>
+
+          <article class="price price--featured">
+            <span class="price__ribbon">Beliebt</span>
+            <header class="price__head">
+              <span class="price__index">02</span>
+              <h3 class="price__name">Unlimited</h3>
+              <p class="price__sub">Volle Mattenzeit.</p>
+            </header>
+            <p class="price__amount"><span class="price__currency">€</span>89<span class="price__per">/ Monat</span></p>
+            <ul class="price__features">
+              <li>Alle Kurse, alle Disziplinen</li>
+              <li>Open Mat inklusive</li>
+              <li>Monatlich kündbar</li>
+              <li>Wettkampf-Coaching</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--accent btn--block">Mitglied werden</a>
+          </article>
+
+          <article class="price">
+            <header class="price__head">
+              <span class="price__index">03</span>
+              <h3 class="price__name">Kids &amp; Teens</h3>
+              <p class="price__sub">Ab 6 Jahren.</p>
+            </header>
+            <p class="price__amount"><span class="price__currency">€</span>59<span class="price__per">/ Monat</span></p>
+            <ul class="price__features">
+              <li>2× Training / Woche</li>
+              <li>Altersgerechtes BJJ</li>
+              <li>Kleine Gruppen</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--ghost btn--block">Anmelden</a>
+          </article>
+        </div>
+
+        <p class="schedule__note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Erstes Training <strong>kostenlos</strong>. Bring nur dich selbst. Wir leihen dir alles, was du brauchst.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq" class="section section--faq">
+      <div class="container faq">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">09</span>
+            <span class="section__line"></span>
+            <span class="section__label">FAQ</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">Deine Fragen,<br/><span class="accent-text">beantwortet.</span></h2>
+            <p class="section__lead">Sechs Antworten, die Anfänger uns am häufigsten stellen.</p>
+          </div>
+        </header>
+
+        <ul class="faq__list" role="list">
+          <li class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              <span class="faq__num">01</span>
+              <span class="faq__text">Brauche ich Vorerfahrung, um anzufangen?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Nein. Über 80% unserer Mitglieder haben ohne jede Vorerfahrung angefangen. Im Anfänger-Kurs lernst du in kleinen, geführten Schritten, ohne Druck und ohne knallhartes Sparring am ersten Tag.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              <span class="faq__num">02</span>
+              <span class="faq__text">Welche Ausrüstung brauche ich für das Probetraining?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Für dein erstes Training reichen ein T-Shirt, eine bequeme Sport-Shorts ohne Reißverschluss oder Knöpfe und etwas zu trinken. Wir trainieren barfuß auf der Matte. Falls vorhanden: Mundschutz mitbringen. Einen Gi (BJJ-Kimono) bekommst du später bei Bedarf günstig über uns.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              <span class="faq__num">03</span>
+              <span class="faq__text">Bin ich zu alt / zu unsportlich?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Ganz klar: nein. Bei uns trainieren Menschen zwischen 16 und 55+. Grappling und BJJ sind so technisch, dass Hebel und Position oft mehr zählen als rohe Kraft. Wir steigen mit dir genau dort ein, wo du gerade stehst.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              <span class="faq__num">04</span>
+              <span class="faq__text">Wie funktioniert das kostenlose Probetraining?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Du schreibst uns über das Formular oder Instagram, wir bestätigen einen Termin. Du kommst 15 Minuten früher, wir machen einen kurzen Check-In, und du trainierst eine komplette Einheit mit, inklusive Aufwärmen, Technik und (optional) leichtem Sparring. Danach reden wir, ob's für dich passt. Kein Druck, kein Abo.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              <span class="faq__num">05</span>
+              <span class="faq__text">Kann ich Frauen-/Mixed-Training machen?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Ja. Alle unsere regulären Klassen sind Mixed. Zusätzlich planen wir feste Frauen-Trainings ab Sommer 2026. Schreib uns, wenn du dabei sein willst, dann setzen wir dich auf die Liste.</p>
+            </div>
+          </li>
+
+          <li class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              <span class="faq__num">06</span>
+              <span class="faq__text">Wie ist die Vertragslaufzeit?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__a">
+              <p>Alle Mitgliedschaften sind <strong>monatlich kündbar</strong>. Keine 12-Monats-Verträge, keine versteckten Gebühren. Du bleibst, weil du willst, nicht weil du musst.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section id="kontakt" class="section section--contact">
+      <div class="container">
+        <header class="section__head section__head--editorial">
+          <div class="section__chapter">
+            <span class="section__num">10</span>
+            <span class="section__line"></span>
+            <span class="section__label">KONTAKT</span>
+          </div>
+          <div class="section__head-grid">
+            <h2 class="section__title">Bereit für dein<br/><span class="accent-text">erstes Training?</span></h2>
+            <p class="section__lead">Schreib uns kurz, wir melden uns innerhalb von 24 Stunden mit einem freien Termin.</p>
+          </div>
+        </header>
+
+        <div class="contact">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name"><span class="field__num">01</span>Name</label>
+              <input type="text" id="name" name="name" required placeholder="Max Mustermann" />
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email"><span class="field__num">02</span>E-Mail</label>
+                <input type="email" id="email" name="email" required placeholder="max@beispiel.de" />
+              </div>
+              <div class="field">
+                <label for="phone"><span class="field__num">03</span>Telefon <span class="field__hint">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="+49 ..." />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="interest"><span class="field__num">04</span>Interesse</label>
+              <select id="interest" name="interest" required>
+                <option value="">Bitte wählen</option>
+                <option value="bjj">Brazilian Jiu-Jitsu (Gi)</option>
+                <option value="nogi">No-Gi / Luta Livre</option>
+                <option value="mma">MMA + Fitness</option>
+                <option value="kids">Kids &amp; Teens</option>
+                <option value="all">Alles ausprobieren</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message"><span class="field__num">05</span>Nachricht</label>
+              <textarea id="message" name="message" rows="4" placeholder="Erzähl uns kurz, was du erreichen willst: Erfahrung, Ziele, Fragen ..."></textarea>
+            </div>
+
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span>Ich stimme der <a href="#">Datenschutzerklärung</a> zu.</span>
+            </label>
+
+            <button type="submit" class="btn btn--accent btn--lg btn--block">
+              <span>Probetraining anfragen</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <p class="contact__success" id="contactSuccess" role="status" aria-live="polite" hidden>
+              ✓ Anfrage gesendet. Wir melden uns innerhalb von 24h.
+            </p>
+          </form>
+
+          <aside class="contact__aside" aria-label="Standort und Erreichbarkeit">
+            <div class="contact__block">
+              <h3>So findest du uns</h3>
+              <p class="contact__address">
+                Momentum Combat Club<br/>
+                Industriestraße 12<br/>
+                86609 Donauwörth
+              </p>
+            </div>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                </span>
+                <a href="tel:+4917693548270">+49 176 93 54 82 70</a>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z M4 4l8 8 8-8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+                </span>
+                <a href="mailto:hallo@momentum-combat.de">hallo@momentum-combat.de</a>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </span>
+                <span>Mo–Fr · 17:00 – 22:00<br/>Sa · 10:00 – 13:00</span>
+              </li>
+            </ul>
+
+            <div class="map" aria-label="Standort auf Google Maps">
+              <iframe
+                title="Standort Momentum Combat Club Donauwörth"
+                src="https://www.google.com/maps?q=Donauw%C3%B6rth&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+              <a href="https://www.google.com/maps?q=Donauw%C3%B6rth" target="_blank" rel="noopener noreferrer" class="map__cta">
+                <span>In Google Maps öffnen</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta-final" aria-label="Letzter Aufruf">
+      <div class="cta-final__bg" aria-hidden="true">
+        <img src="assets/cta-bg.webp"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1681203888755-bd61fe3558eb?auto=format&fit=crop&w=1600&q=70';"
+             alt="" width="1600" height="900" loading="lazy" />
+      </div>
+      <div class="container cta-final__inner">
+        <span class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>JETZT STARTEN</span>
+        <h2 class="cta-final__title">
+          Die beste Zeit anzufangen<br/>
+          war gestern.<br/>
+          <span class="accent-text">Die zweitbeste ist jetzt.</span>
+        </h2>
+        <a href="#kontakt" class="btn btn--accent btn--lg">
+          <span>Kostenloses Probetraining</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <a href="#top" class="logo">
+          <span class="logo__mark">
+            <img src="assets/logo.webp" alt="Momentum Combat Club" class="logo__img" width="56" height="56" />
+            <svg class="logo__svg" viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M4 32 L20 6 L36 32 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M14 26 L20 16 L26 26" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </a>
+        <p>Kampfsport, Grappling und MMA in Donauwörth. Für jeden, der besser werden will als gestern.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Training</h4>
+        <ul>
+          <li><a href="#training">Brazilian Jiu-Jitsu</a></li>
+          <li><a href="#training">No-Gi / Luta Livre</a></li>
+          <li><a href="#training">MMA + Fitness</a></li>
+          <li><a href="#training">Kids &amp; Teens</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Club</h4>
+        <ul>
+          <li><a href="#coach">Headcoach</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#stundenplan">Stundenplan</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <address>
+          Industriestraße 12<br/>
+          86609 Donauwörth<br/><br/>
+          <a href="tel:+4917693548270">+49 176 93 54 82 70</a><br/>
+          <a href="mailto:hallo@momentum-combat.de">hallo@momentum-combat.de</a>
+        </address>
+        <ul class="footer__socials">
+          <li>
+            <a href="https://instagram.com/momentumcombatclub" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 7s-.2-1.5-.8-2.1c-.8-.9-1.7-.9-2.1-1C16 3.5 12 3.5 12 3.5s-4 0-7.1.4c-.4.1-1.3.1-2.1 1C2.2 5.5 2 7 2 7S1.8 8.7 1.8 10.5v1.6c0 1.8.2 3.5.2 3.5s.2 1.5.8 2.1c.8.9 1.9.9 2.4 1 1.7.2 7.3.4 7.3.4s4 0 7.1-.4c.4-.1 1.3-.1 2.1-1 .6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1.6C22.2 8.7 22 7 22 7zM10 15V8l5 3.5L10 15z" fill="currentColor"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.5 11.5 0 0 0 4.5 19l-1 5 5.1-1.3a11.5 11.5 0 0 0 5.4 1.4 11.5 11.5 0 0 0 6.5-19.6zM12 21.4a9.4 9.4 0 0 1-4.8-1.3l-.3-.2-3 .8.8-3-.2-.3a9.4 9.4 0 1 1 7.5 4zm5.4-7c-.3-.1-1.7-.8-2-1s-.5-.1-.7.1c-.2.3-.8 1-1 1.2s-.4.2-.7 0a7.6 7.6 0 0 1-2.3-1.4 8.4 8.4 0 0 1-1.6-2c-.2-.3 0-.5.1-.6.2-.2.4-.4.6-.6.2-.2.2-.4.3-.6.1-.2 0-.4 0-.5s-.7-1.7-.9-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.4s-1 1-1 2.4 1 2.8 1.1 3 2 3 4.8 4.2c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z" fill="currentColor"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> Momentum Combat Club · Donauwörth</p>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Global grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
